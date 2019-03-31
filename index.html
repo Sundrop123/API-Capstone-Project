@@ -1,1 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Trip Planner" />
+    <meta property="og:description" content="A responsive website site that pulls data from a third party API, https://OpenWeatherMap.com and https://Foursquare.com, to present search results in a useful way." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://annalyncs.github.io/thinkful-api-capstone-trip-planner/" />
+    <title>Weather Search</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto|Megrim|Montserrat:400,600|Raleway:400,700" rel="stylesheet">
+    <link href="index.css" rel="stylesheet" />
+</head>
+
+<body>
+    <main role=main>
+        <div class="start-display" id="start-page">
+            <header class="row" role="banner">
+                <h1 class="logo">Weather Finder</h1>
+                <p class="api-info">Powered by OpenWeatherMap and Foursquare API</p>
+                <p>Find the weather of any city or state!</p>
+            </header>
+
+            <form action="#" class="search-form row" id="search-query-form">
+                <input type="text" placeholder="Enter a city" class="search-query" id="search-term" required>
+                <button type="submit" class="submit-button">Search</button>
+            </form>
+        </div>
+
+        <section class="weather row" id="weather-display">
+
+        </section>
+
+        <nav role="navigation" class="navigation-bar" id="results-navigation">
+            <div class="options row">
+               <button class="menu-button" id="aboutUs-button">About Us</button>
+                <button class="menu-button" id="contactUs-button">Contact Us</button>
+                <button class="menu-button" id="Comments-button">Comments</button>
+            </div>
+        </nav>
+
+        <section id="foursquare-results" class="row">
+        </section>
+
+    <footer class="footer">
+            <a href="https://github.com/Sundrop123" target="_blank"><img src="images/githubicon.png" alt="github icon" width="50px" height="50px"></a>&nbsp;
+            <a href="https://www.linkedin.com/in/chrisboodaghian" target="_blank"><img src="images/linkedinicon.png" alt="linkedin icon" width="50px" height="50px"></a>&nbsp;
+            <a href="mailto:chrisbood@icloud.com"><img src="images/emailicon.png" alt="email icon" width="50px" height="50px"></a>
+            <p>Made by Christopher Boodaghian</p>
+        </footer>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDYwwQ-wTWZ6jI75jcsRz4if7dv30i5evo&libraries=places&callback=activatePlacesSearch"></script>
+
+    
+</body>
+
+</html>
