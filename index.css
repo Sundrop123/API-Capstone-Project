@@ -1,1 +1,58 @@
-
+body {
+    background-color:  #7fe1ff;
+    font-size: 20px;
+  }
+  .logo {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 50px;
+  letter-spacing: 2px;
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none solid rgb(68, 68, 68);
+  font-variant: small-caps;
+  text-transform: none;
+  }
+  
+  nav {
+      margin: 20px 0;
+  }
+  
+  button.menu-button {
+  margin: 5px;
+  padding: 10px;
+  background: #fff;
+  border: 0px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px black;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 900;
+  }
+  
+  button.selected {
+      background: #ccc;
+  }
+  .social-links {
+      margin: 0 0;
+      list-style: none;
+      font-size: 1.5em;
+      display: flex;
+      justify-content: center;
+      padding-left: 0px;
+      padding-right: 0px; 
+  }
+  
+  .social-links li {
+      width: 50%; 
+      background-color: #00ffaa88;;
+      text-align: center;
+  }
+  .social-links a {
+      color: white;
+  }
+  footer {
+    background-color: white;
+    height: 125px;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 0 10px black;
+}
