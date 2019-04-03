@@ -1,7 +1,12 @@
+
 body {
-    background-color:  #7fe1ff;
-    font-size: 20px;
+    background-color:  rgba(163, 214, 255, 0.63);
+    font-size: 35px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
   }
+
   .logo {
   font-family: "Courier New", Courier, monospace;
   font-size: 50px;
@@ -12,20 +17,24 @@ body {
   font-variant: small-caps;
   text-transform: none;
   }
-  
+  .weather-results {
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+    background: rgba(176, 197, 235, 0.7);
+    border-radius: 5px;
+  }
   nav {
       margin: 20px 0;
   }
   
   button.menu-button {
-  margin: 5px;
-  padding: 10px;
+  padding: 5px;
   background: #fff;
   border: 0px;
   border-radius: 5px;
   box-shadow: 0 0 10px black;
   font-family: "Courier New", Courier, monospace;
-  font-weight: 900;
   }
   
   button.selected {
@@ -51,8 +60,26 @@ body {
   }
   footer {
     background-color: white;
-    height: 125px;
+    height: 110px;
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 250px;
     box-shadow: 0 0 10px black;
+}
+form input {
+    height: 50px;
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0px;
+}
+
+form button {
+    height: 50px;
+    width: 100px;
+    background: #eee;
+    border: 0px;
+    border-radius: 5px;
+    margin-left: 10px;
+    box-shadow: 0 0 5px black;
+    font-size: 20px;
 }
